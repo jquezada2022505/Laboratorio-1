@@ -35,7 +35,7 @@ body {
 }
 
 nav {
-    width: 665px;
+    width: 565px;
     margin: auto;
     background-color: black;
     font-size: 20px;
@@ -56,4 +56,21 @@ nav {
 
 .menu>li:hover {
     background-color: red;
+}
+
+.carrusel {
+    position: relative;
+    width: 1000px;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 1000px;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
