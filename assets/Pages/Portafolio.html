@@ -78,6 +78,7 @@
                     <h2>Proyecto #2</h2>
                     <p>El nombre del proyecto realizado es "Ventas en linea" fue realizado en el año 2022 y el proyecto esta enfocado en la recopilacion de datos de una empresa de productos varios, el proyecto cuenta con Login, imprimir datos, ingresar,
                         buscar y verificar datos de la empresa.</p>
+                        
                         <img src="../Resources/img/Captura de pantalla (638).png" width="335px" height="335px">
                         <img src="../Resources/img/Captura de pantalla (639).png" width="335px" height="335px">
                         <img src="../Resources/img/Captura de pantalla (640).png" width="335px" height="335px">
@@ -102,28 +103,25 @@
             </section>
 
             <section id="content5">
-                <article class="article">
-                    <h2>Contacto</h2>
-
-                    <label> Nombre </label>
-                    <input type="text">
-
-                    <label> Email </label>
-                    <input type="text">
-
-                    <label> Telefono </label>
-                    <input type="text">
-
-                    <label> Mensaje </label>
-                    <input type="text">
-
-                    <div class="col-sm-6">
-                        <input type="submit" value="Enviar" class="btn btn-success">
+                <form id="formularioContacto" class="article" action="#" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+        
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+        
+                    <button type="button" onclick="enviarFormulario()">Enviar</button>
+                </form>
+        
+                <p id="mensajeExito" style="color: green; display: none;">¡Formulario enviado con éxito!</p>
             </section>
 
-
-            </article>
-            </section>
             <footer>
                 <h4>Josué Quezada &copy; 2022505</h4>
                 <li>
@@ -133,6 +131,6 @@
                 </li>
             </footer>
     </div>
-
+    <script src="../Scripts/Portafolio.js"></script>
 </body>
 </html>

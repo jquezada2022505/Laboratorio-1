@@ -1,17 +1,14 @@
-let imagenActual = 1;
+function enviarFormulario() {
+    var nombre = document.getElementById("nombre").value;
+    var email = document.getElementById("email").value;
+    var telefono = document.getElementById("telefono").value;
+    var mensaje = document.getElementById("mensaje").value;
 
-function cambiarImagen() {
-    const imagen = document.getElementById("miImagen");
-    
-    if (imagenActual === 1) {
-        imagen.src = "otra_imagen.jpg";
-        imagen.alt = "Otra Imagen";
-        imagen.style.transform = "rotate(360deg)"; // Por ejemplo, rotación de 360 grados
-        imagenActual = 2;
-    } else {
-        imagen.src = "imagen.jpg";
-        imagen.alt = "Imagen";
-        imagen.style.transform = "rotate(0deg)"; // Volver a la posición original
-        imagenActual = 1;
+    if (!nombre || !email || !telefono || !mensaje) {
+        alert("Por favor, complete todos los campos del formulario.");
+        return;
     }
+    
+    document.getElementById("mensajeExito").style.display = "block";
+    document.getElementById("formularioContacto").reset();
 }
