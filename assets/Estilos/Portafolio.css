@@ -1,74 +1,80 @@
 body {
     background: white;
-    color: white;
-    font-family: Arial, sans-serif;
+    color: rgb(63, 62, 62); 
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    align-items: center;
     text-align: center;
 }
 
-.header{
-    background: black;
-    margin: 2%;
-    font-size: 30px;
-    font-family: Arial, sans-serif;
+.header {
+    background: darkblue; 
+    color: white; 
+    padding: 20px;
+    border-bottom: 2px solid darkblue; 
+    box-shadow: 0px 3px 5px gray; 
 }
 
-.navegacion{
-    background: black;
-    margin: 2%;
-    height: 75px;
-    font-size: 25px;
-    font-family: Arial, sans-serif;
+.navegacion {
+    background: rgb(7, 7, 63); 
+    color: white; 
+    padding: 10px;
 }
 
-a{
-    background-color: rgb(49, 48, 48);
-    color: white;
+a {
+    background-color: rgb(7, 7, 63);
+    color: white; 
     text-decoration: none;
-    display:inline-block;
-    height: 25px;
-    text-align:center;
-    margin-top: 25px;
-    line-height: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    margin: 10px; 
 }
 
-.article{
-    margin: 2%;
-    background-color: black;
+a:hover {
+    background-color: #27496b;
+}
+
+.article {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+    margin: 20px;
+}
+
+.album {
+    background: green;
+    color: white; 
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.album:hover {
+    background-color: #5eee1c;
 }
 
 nav {
     font-size: 20px;
-    border-bottom: 1px solid #fff;
-   
+    border-bottom: 1px solid whi;
 }
 
-.album{
-    background: green;
-    text-decoration: none;
-    margin: 2%;
-}
 nav ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    
 }
 
 nav ul li {
-    display: inline;  
+    display: inline;
+    margin-right: 20px;
 }
 
 footer {
-    background-color: black;
-    color: azure;
+    background-color: darkblue; 
+    color: black; 
     text-align: center;
-    line-height: 50px;
-    margin: 2%;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
 }

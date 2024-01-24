@@ -30,7 +30,7 @@
     background: black;
     color: white;
     width: 600px;
-    height: 600px;
+    height: 625px;
     font-size: 25px;
     text-align:left;
 }
@@ -53,13 +53,19 @@
     text-align:center;
     margin-top: 25px;
     line-height: 115px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a{
     color: black;
     border-radius: 5px;
-    background: red;
+    background: rgb(255, 0, 0);
     text-align: center;
     display: block;
     text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(131, 35, 22);
 }
