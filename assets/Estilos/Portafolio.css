@@ -41,6 +41,12 @@ a:hover {
     margin: 20px;
 }
 
+img{
+    width:300px;
+    height:300px;
+    margin: 50px;
+}
+
 .album {
     background: green;
     color: white; 
@@ -89,3 +95,5 @@ button {
     padding: 10px;
     cursor: pointer;
 }
+
+
