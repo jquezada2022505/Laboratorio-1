@@ -79,3 +79,12 @@ img {
     width: 100%;
     height: auto;
 }
+
+.footer{
+    background: red;
+    height: 115px;
+    color: white;
+    text-align:center;
+    margin-top: 25px;
+    line-height: 115px;
+}
